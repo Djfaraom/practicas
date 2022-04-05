@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+Diego mira aqui 👀
+ body {
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/9/95/Batman_%26_Robin_%28Batman_vol._1_-9_Feb._1942%29.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: ;
+} 
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header ul li:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+main {
+  color: white;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+  background-image: url(https://www.renegado.com.mx/Imagenes/N_090322102958.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding-bottom: 95%; */
+  /* aspect-ratio: 300 / 313; */
+}
+
+/* Alvaro mira aqui 👀 */
+
+.content-row {
+  display: flex;
+}
+
+.content-row > * {
+  flex-basis: 100%;
+}
+
+main {
+  max-width: 75%;
+}
+
+aside {
+  max-width: 25%;
+}
+
+footer {
+  border: 10px solid pink;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* David mira aqui 👀 */
+footer span {
+  border: 2px solid green;
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+}
