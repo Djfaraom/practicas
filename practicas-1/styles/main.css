@@ -2,79 +2,118 @@
   box-sizing: border-box;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+/*alinear texto, tamaño y color en (h1)*/
+
+h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
-Diego mira aqui 👀
+/*alinear texto, tamaño y color en (h2)*/
+
+h2 {
+   font-weight: bold;
+   font-size: 15px;
+   font-family: sans-serif;
+}
+
+/*crear borde en diferentes elementos*/
+
+ header, section, footer, aside, nav, article, hgroup {
+   /*border: 1px solid black;*/
+   display: block;
+ }
+
+/*centrar el texto del body*/
+
  body {
-  background-image: url(https://upload.wikimedia.org/wikipedia/en/9/95/Batman_%26_Robin_%28Batman_vol._1_-9_Feb._1942%29.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: ;
-} 
+  text-align: center;
+ }
 
-header .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  /*margenes y contenido externo */
 
-header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
+ .agrupar {
+   width: 960px;
+   border: 1px solid black;
+   /*background: green;*/ 
+   /*margin-top: 200px;*/
+   /*margin-left: auto;*/
+   /*margin-right: auto;*/
+   margin: 15px auto;
+   /*padding: 40px; */  /*padding es el espacio desde el marco hacia dentro del texto*/
+ }
 
-header ul li:not(:last-of-type) {
-  margin-right: 10px;
-}
+ .cabecera {
+  background: #fffbb9;
+  border: 1px solid #999; 
+  padding: 20px;
+ }
 
-main {
-  color: white;
-  height: 40vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid black;
-  background-image: url(https://www.renegado.com.mx/Imagenes/N_090322102958.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  /* padding-bottom: 95%; */
-  /* aspect-ratio: 300 / 313; */
-}
+ .cabecera h1 {
+   text-align: left;
+ }
 
-/* Alvaro mira aqui 👀 */
+ .menu {
+   background: #ccc;
+   padding: 5px 15px;
+   text-align: left;
+ }
 
-.content-row {
-  display: flex;
-}
+ /* usar estilos li que esten dentro de la clase menu*/
 
-.content-row > * {
-  flex-basis: 100%;
-}
+ .menu li {  
+    list-style: none; /*para eliminar los puntos de seleccion*/
+    padding: 5px;     /*el espaciado entre los bloques*/
+    font: bold 14px verdana;
+    /*border: 1px solid black; /* poner un borde solido y negro*/
+    display: inline-block;   /*para ponerlos como elementos en linea*/ 
+ }
 
-main {
-  max-width: 75%;
-}
+ .seccion {
+   margin: 20px;
+   width: 600px;
+   float: left;   
+ }
 
-aside {
-  max-width: 25%;
-}
+ article {
+   background: #fffbcc;
+   border: 1px solid #999;
+   padding: 20px;
+   margin-bottom: 15px;
+ }
 
-footer {
-  border: 10px solid pink;
-  width: 50%;
-  margin: 0 auto;
-}
+ time {
+   color: #999;
+ }
 
-/* David mira aqui 👀 */
-footer span {
-  border: 2px solid green;
-  width: 300px;
-  height: 200px;
-  display: inline-block;
-}
+ article footer {
+   text-align: right;
+   margin-top: 20px;
+ }
+
+ .columna {
+   width: 300px;
+   float: left;
+   margin: 20px 0;   
+ }
+
+ .columna blockquote {
+   border: 1px solid black;
+   padding: 40px;
+   background: #fffbb9;
+   margin-bottom: 20px;
+ }
+
+ .pie {
+   clear: both;
+   padding: 20px;
+   background: #2d3436;
+   color: #ffffff;
+ }
+
+ img {
+   width: 80px;
+   display: block;
+   margin: 20px auto; 
+ }
